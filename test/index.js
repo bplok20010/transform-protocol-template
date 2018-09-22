@@ -1,15 +1,8 @@
-# transform-protocol-template
-协议模版转换
+const parseTemplateToCode = require('../lib').default;
 
-## install
+let z = null;
 
-`npm install --save transform-protocol-template`
-
-## examples
-
-```
-
-import transformProtocolTemplate from 'transform-protocol-template';
+console.log(z + '');
 
 let template = `
 <?
@@ -56,5 +49,3 @@ const ret = parseTemplateToCode(template, {
 });
 
 console.log(ret);
-
-```

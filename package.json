@@ -1,0 +1,39 @@
+{
+    "name": "transform-protocol-template",
+    "version": "1.0.0",
+    "description": "协议模版转换",
+    "main": "lib/index.js",
+    "scripts": {
+        "start": "transform-es src -d lib -w -c --corejs false --helpers false",
+        "test": "node test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bplok20010/transform-protocol-template.git"
+    },
+    "keywords": [
+        "template"
+    ],
+    "author": "nobo.zhou@foxmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bplok20010/transform-protocol-template/issues"
+    },
+    "files": [
+        "lib",
+        "*.md"
+    ],
+    "homepage": "https://github.com/bplok20010/transform-protocol-template#readme",
+    "devDependencies": {
+        "@babel/plugin-transform-modules-amd": "^7.1.0",
+        "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+        "@babel/plugin-transform-modules-systemjs": "^7.0.0",
+        "@babel/plugin-transform-modules-umd": "^7.1.0",
+        "transform-es": "^2.2.3"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.0.0",
+        "@babel/runtime-corejs2": "^7.0.0",
+        "xml2js": "^0.4.19"
+    }
+}
